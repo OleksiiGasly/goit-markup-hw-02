@@ -86,7 +86,8 @@ body {
   outline: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--inverse-text-color);
   background-color: var(--accent-color);
 }
