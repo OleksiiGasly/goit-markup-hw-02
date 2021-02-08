@@ -4,6 +4,7 @@
   --secondary-text-color: rgba(255, 255, 255, 0.6);
   --inverse-text-color: #ffffff;
   --accent-color: #2196f3;
+  --elements-color: #f5f4fa;
   --background-light-color: #e5e5e5;
   --background-dark-color: #2f303a;
 }
@@ -11,10 +12,6 @@
 .list {
   list-style: none;
 }
-
-/* a {
-  text-decoration: none;
-} */
 
 body {
   background-color: var(--background-light-color);
@@ -26,7 +23,6 @@ body {
   line-height: 1.71;
 }
 
-/* Header */
 .logo {
   color: var(--title-text-color);
   font-family: raleway;
@@ -76,61 +72,37 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero */
-.hero {
-  color: var(--inverse-text-color);
-  background-color: var(--background-dark-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 /* Button */
 .button {
-  color: var(--inverse-text-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-}
-
-/* Section */
-.section-title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* Advantages */
-.advantages .title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-/* Team */
-.team .title {
-  color: var(--title-text-color);
+  background-color: var(--elements-color);
+  font-family: roboto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.62;
   text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
-.team {
+.button:hover {
+  color: var(--inverse-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Portfolio layout */
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.group {
   font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+  line-height: 1.87;
 }
 
 /* Footer */
