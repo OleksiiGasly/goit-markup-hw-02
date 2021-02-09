@@ -1,82 +1,8 @@
-:root {
-  --title-text-color: #212121;
-  --primary-text-color: #757575;
-  --secondary-text-color: rgba(255, 255, 255, 0.6);
-  --inverse-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --elements-color: #f5f4fa;
-  --background-light-color: #e5e5e5;
-  --background-dark-color: #2f303a;
-}
-
-.list {
-  list-style: none;
-}
-
-body {
-  background-color: var(--background-light-color);
-  color: var(--primary-text-color);
-  font-family: roboto, raleway, sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.logo {
-  color: var(--title-text-color);
-  font-family: raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.logo-accent {
-  color: var(--accent-color);
-}
-
-.logo-inverse {
-  color: var(--inverse-text-color);
-}
-
-.site-nav .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
-.contacts .link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-}
-
 /* Button */
 .button {
   color: var(--title-text-color);
-  background-color: var(--elements-color);
-  font-family: roboto;
+  background-color: var(--background-light-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -88,55 +14,27 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--inverse-text-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
 /* Portfolio layout */
-.title {
+.portfolio-element {
+  text-decoration: none;
+  color: inherit;
+}
+
+.name {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 .group {
   font-size: 16px;
   line-height: 1.87;
-}
-
-/* Footer */
-footer {
-  color: var(--inverse-text-color);
-  background-color: var(--background-dark-color);
-}
-
-.address {
-  font-style: inherit;
-}
-
-.location {
-  color: var(--inverse-text-color);
   text-decoration: none;
-}
-
-.address-contacts .link {
-  color: var(--secondary-text-color);
-  text-decoration: none;
-}
-
-/* Visually-hidden */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }

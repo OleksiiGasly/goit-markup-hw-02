@@ -2,9 +2,9 @@
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --secondary-text-color: rgba(255, 255, 255, 0.6);
-  --inverse-text-color: #ffffff;
+  --white-color: #ffffff;
   --accent-color: #2196f3;
-  --background-light-color: #e5e5e5;
+  --background-light-color: #f5f4fa;
   --background-dark-color: #2f303a;
 }
 
@@ -12,12 +12,7 @@
   list-style: none;
 }
 
-/* a {
-  text-decoration: none;
-} */
-
 body {
-  background-color: var(--background-light-color);
   color: var(--primary-text-color);
   font-family: roboto, raleway, sans-serif;
   letter-spacing: 0.03em;
@@ -27,9 +22,13 @@ body {
 }
 
 /* Header */
+header {
+  background-color: var(--white-color);
+}
+
 .logo {
   color: var(--title-text-color);
-  font-family: raleway;
+  font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -41,7 +40,7 @@ body {
 }
 
 .logo-inverse {
-  color: var(--inverse-text-color);
+  color: var(--white-color);
 }
 
 .site-nav .link {
@@ -76,66 +75,9 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero */
-.hero {
-  color: var(--inverse-text-color);
-  background-color: var(--background-dark-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-/* Button */
-.button {
-  color: var(--inverse-text-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-}
-
-/* Section */
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* Advantages */
-.advantages .title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-/* Team */
-.team .title {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
-.team {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
 /* Footer */
 footer {
-  color: var(--inverse-text-color);
+  color: var(--white-color);
   background-color: var(--background-dark-color);
 }
 
@@ -144,7 +86,7 @@ footer {
 }
 
 .location {
-  color: var(--inverse-text-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
